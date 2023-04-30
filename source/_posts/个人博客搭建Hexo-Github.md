@@ -1,7 +1,11 @@
 ---
-title: 个人博客搭建Hexo+Github.md
+title: 个人博客搭建汇总Hexo+Github
 date: 2023-04-30 15:53:26
-tags:Hexo
+tags: 
+  - Hexo
+  - 个人博客
+categories: 	
+  - 周边扩展
 ---
 
 # 个人博客Hexo+Github
@@ -48,6 +52,10 @@ git commit -m "updateinf"
 //git pull --rebase origin master
 git push -u origin master
 ```
+
+## 错误处理
+
+[YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key](https://blog.csdn.net/swy_swy_swy/article/details/105326420)：md文档中的头部信息里，键值对之间需要有空格
 
 ## 未整理
 
