@@ -4,7 +4,9 @@ date: 2023-04-30 15:53:26
 tags:Hexo
 ---
 
-# 预备资源
+# 个人博客Hexo+Github
+
+## 前置信息
 
 [wordpress建站](WordPress为什么免费？搭建WordPress网站要花多少钱？ - 窝小力的文章 - 知乎 https://zhuanlan.zhihu.com/p/91557826)
 
@@ -20,14 +22,45 @@ tags:Hexo
 
 [运维、linux](https://www.lutixia.cn/)
 
-# Hexo
+## 重要代码
+
+```python
+hexo clean #清除缓存文件db.json和已生成的静态文件public
+hexo g #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)
+hexo d #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)
+hexo s
+
+hexo new post "article title" #新建一篇文章
+```
+
+## 博客构建
 
 [hexo+butterfly，搭建博客](https://juejin.cn/post/7111237168168697886)：作者个人博客推荐、nodejs、Github、个人域名、Butterfly主题
 [hexo+Github搭建博客](https://zhuanlan.zhihu.com/p/35668237)：内容和上一篇类似，但更详细了些
 
 [自动备份Hexo中的博客源文件](https://cloud.tencent.com/developer/article/1964356)：[手动备份链接](https://blog.51cto.com/u_12877374/2853805)（针对上面链接中的备份博客源文件进行了细化），此外，介绍了自动备份的方案
 
+手动更新：
 
+```c
+git add .
+git commit -m "updateinf"
+//git pull --rebase origin master
+git push -u origin master
+```
+
+## 未整理
+
+https://zhuanlan.zhihu.com/p/26625249
+https://www.antmoe.com/posts/75a6347a/
+https://zhuanlan.zhihu.com/p/26625249
+https://www.antmoe.com/posts/75a6347a/
+https://blog.51cto.com/u_15127636/3257851
+https://butterfly.js.org/
+https://winney07.github.io/2018/08/02/%E5%9C%A8Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/
+https://winney07.github.io/2018/08/02/%E5%9C%A8Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/
+https://bore.vip/archives/5b629e16/
+https://butterfly.js.org/posts/4aa8abbe/#%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2
 
 
 
