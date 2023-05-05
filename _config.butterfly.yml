@@ -829,15 +829,15 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
-  per_page: true
+  enable: true #开启音乐播放器
+  per_page: true #每个页面都有Aplayer
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
@@ -902,6 +902,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
+    - <div class="aplayer no-destroy" data-id="8888274007" data-server="tencent" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"></div>
 
 # CDN
 # Don't modify the following settings unless you know how they work

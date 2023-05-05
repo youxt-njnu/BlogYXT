@@ -105,3 +105,8 @@ deploy:
   type: git
   repository: https://github.com/youxt-njnu/youxt-njnu.github.io.git
   branch: main
+
+# add music
+aplayer:
+    enable: true
+    asset_inject: false
