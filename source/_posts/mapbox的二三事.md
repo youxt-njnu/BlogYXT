@@ -43,9 +43,23 @@ categories:
 
 > [GitHub传送门](https://github.com/mapbox/mapbox-gl-js)
 
+## mapbox GL Native
+
+
+
+## node-sqlite3
+
+
+
+# 实现原理
+
+## OpenGL
+
+采用游戏开发中的OpenGL进行地图渲染；
+
 ## 矢量瓦片
 
-
+采用矢量地图切片，能对切片无限分割，多层合并；
 
 # 周边
 
@@ -79,4 +93,11 @@ GIthub协作
 
 ## 职位分类
 
+> 技术在相关领域资深；
+>
+> 能用英语工作交流；
+>
+> 有地图开发相关经验；
+
 * 职位：
+

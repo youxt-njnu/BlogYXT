@@ -3,9 +3,9 @@ title: JavaScript基础知识Ⅰ
 date: 2023-05-03 20:03:26
 tags: 
   - JS
-  - 大前端
+  - 基础知识
 categories: 	
-  - 就业导向
+  - 大前端
 
 ---
 
@@ -55,15 +55,13 @@ Emmet的前身是Zen coding,它使用缩写,来提高html/css的编写速度。
 
 ## JS 的组成
 
-![](./images/js/图片11.png)
-
-
+![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/图片11.png)
 
 1. #### **ECMAScript**
 
    	ECMAScript 是由ECMA 国际（ 原欧洲计算机制造商协会）进行标准化的一门编程语言，这种语言在万维网上应用广泛，它往往被称为 JavaScript或 JScript，但实际上后两者是 ECMAScript 语言的实现和扩展。
 
-   ![](./images/js/图片12.png)
+   ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/图片12.png)
 
    ​		ECMAScript：规定了JS的编程语法和基础核心知识，是所有浏览器厂商共同遵守的一套JS语法工业标准。
 
@@ -245,7 +243,7 @@ vscode → 首选项按钮 → 键盘快捷方式 → 查找 原来的快捷键 
 
      用来判断一个变量是否为非数字的类型，返回 true 或者 false
 
-   ![](./images/js/图片17.png)
+ ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/图片17.png)
 
    ```js
 var usrAge = 21;
@@ -379,7 +377,7 @@ console.log(isNaN(userName));// true ，"andy"是一个非数字
 
   ​		不同类型的返回值
 
-  ![](./images/js/图片18.png)
+  ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/图片18.png)
 
 - 字面量
 
@@ -428,7 +426,7 @@ console.log(isNaN(userName));// true ，"andy"是一个非数字
 
 	计算机不能直接理解任何除机器语言以外的语言，所以必须要把程序员所写的程序语言翻译成机器语言才能执行程序。程序语言翻译成机器语言的工具，被称为翻译器。
 
-![](./images/js/图片22.png)
+![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/图片22.png)
 
 -  翻译器翻译的方式有两种：一个是编译，另外一个是解释。两种方式之间的区别在于翻译的时间点不同
 -  编译器是在代码执行之前进行编译，生成中间代码文件
@@ -436,7 +434,7 @@ console.log(isNaN(userName));// true ，"andy"是一个非数字
 
 执行过程：
 
-![](./images/js/图片23.png)
+![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/图片23.png)
 
 ## 运算符（操作符）
 
@@ -707,7 +705,7 @@ function fn1() {
 fn1();
 ```
 
-![](./images/js/图片2-16779152458061.png)
+![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/图片2-16779152458061.png)
 
 ### 预解析
 
@@ -1020,9 +1018,9 @@ Date 对象和 Math 对象不一样，Date是一个构造函数，所以使用�
 
   注意：如果创建实例时并未传入参数，则得到的日期对象是当前时间对应的日期对象
 
-- 使用Date实例的方法和属性	
+- 使用Date实例的方法和属性
 
-  ![图片1](F:\20-求职\11-前端\images\js\图片1-16816526761481.png)
+  ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/图片1-16816526761481.png)
 
 - 通过Date实例获取总毫米数
 
@@ -1100,7 +1098,7 @@ Date 对象和 Math 对象不一样，Date是一个构造函数，所以使用�
 
 - 数组中有进行增加、删除元素的方法，部分方法如下表
 
-  ![pushpop](F:\20-求职\11-前端\images\js\pushpop.png)
+  ![img](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/pushpop.png)
 
   注意：push、unshift为增加元素方法；pop、shift为删除元素的方法
 
@@ -1108,7 +1106,7 @@ Date 对象和 Math 对象不一样，Date是一个构造函数，所以使用�
 
 - 数组中有对数组本身排序的方法，部分方法如下表
 
-  ![sort](F:\20-求职\11-前端\images\js\sort.png)
+  ![img](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/sort.png)
 
   注意：sort方法需要传入参数来设置升序、降序排序
 
@@ -1119,13 +1117,13 @@ Date 对象和 Math 对象不一样，Date是一个构造函数，所以使用�
 
 - 数组中有获取数组指定元素索引值的方法，部分方法如下表
 
-  ![index](F:\20-求职\11-前端\images\js\index.png)
+  ![img](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/index.png)
 
 #### 数组转换为字符串
 
 - 数组中有把数组转化为字符串的方法，部分方法如下表
 
-  ![tostring](F:\20-求职\11-前端\images\js\tostring.png)
+  ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/tostring.png)
 
   注意：join方法如果不传入参数，则按照 “ , ”拼接元素
 
@@ -1133,7 +1131,7 @@ Date 对象和 Math 对象不一样，Date是一个构造函数，所以使用�
 
 - 数组中还有其他操作方法，同学们可以在课下自行查阅学习
 
-  ![other](F:\20-求职\11-前端\images\js\other.png)
+  ![img](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/other.png)
 
 ### 字符串对象
 
@@ -1171,7 +1169,7 @@ temp = null;
 
 ​		字符串通过基本包装类型可以调用部分方法来操作字符串，以下是返回指定字符的位置的方法：
 
-![location](F:\20-求职\11-前端\images\js\location.png)
+![img](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/location.png)
 
 案例：查找字符串"abcoefoxyozzopp"中所有o出现的位置以及次数
 
@@ -1192,7 +1190,7 @@ console.log('o出现的次数是: ' + num);
 
 字符串通过基本包装类型可以调用部分方法来操作字符串，以下是根据位置返回指定位置上的字符：
 
-![place](F:\20-求职\11-前端\images\js\place.png)
+![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/place.png)
 
 案例：判断一个字符串 'abcoefoxyozzopp' 中出现次数最多的字符，并统计其次数
 
@@ -1231,7 +1229,7 @@ console.log('o出现的次数是: ' + num);
 
 字符串通过基本包装类型可以调用部分方法来操作字符串，以下是部分操作方法：
 
-![](./images/js/图片10.png)
+![](https://raw.githubusercontent.com/youxt-njnu/blog-img/master/%E5%9B%BE%E7%89%8710.png)
 
 #### replace()方法
 
