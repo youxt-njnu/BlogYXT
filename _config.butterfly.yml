@@ -34,8 +34,8 @@ code_word_wrap: true # 设置代码自动换行
 #   icon: link || the description || color
 social:
   fab fa-github: https://github.com/youxt-njnu || Github || '#24292e'
-  fa-brands fa-zhihu: https://www.zhihu.com/people/paleYYY || zhihu || '#24292e'
   fas fa-envelope: mailto:10190208@njnu.edu.cn || Email || '#4a7dbe'
+  fa-brands fa-zhihu: https://www.zhihu.com/people/paleYYY || zhihu || '#24292e'
 
 # Image (圖片設置)
 # --------------------------------------
