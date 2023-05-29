@@ -1,12 +1,14 @@
 ---
 title: 个人博客搭建汇总Hexo+Github
 date: 2023-04-30 15:53:26
-photos: 
+photos: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/22862D84D2E06B14286B09ABF9A53B72.jpg
 tags: 
   - Hexo
   - 个人博客
 categories: 	
   - 周边扩展
+comments: true
+cover: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/15A21438BD46CC6CF21998480FDA2C83.jpg
 ---
 
 # 个人博客Hexo+Github
@@ -66,13 +68,7 @@ git commit -m "updateinf"
 git push -u origin master
 ```
 
-## 错误处理
-
-[YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key](https://blog.csdn.net/swy_swy_swy/article/details/105326420)：md文档中的头部信息里，键值对之间需要有空格
-
-## 未整理
-
-###  Page Front-matter
+Page Front-matter
 
 ```
 MARKDOWN---
@@ -87,10 +83,10 @@ katex:
 ---
 ```
 
-###  Post Front-matter
+Post Front-matter
 
 ```
-MARKDOWN---
+---
 title:
 date:
 tags:
@@ -111,7 +107,18 @@ hide:
 
 
 
+## 错误处理
+
+[YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key](https://blog.csdn.net/swy_swy_swy/article/details/105326420)：md文档中的头部信息里，键值对之间需要有空格
+
+[unexpected token问题](https://one-more-tech.gitlab.io/Hexo-%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB,%E4%BD%BF%E7%94%A8html%E5%86%99%E6%96%87%E7%AB%A0,unexpected-token%E7%AD%89%E9%97%AE%E9%A2%98/index/)
+
+## 未整理
+
 https://www.antmoe.com/posts/75a6347a/
+
+看到了评论的设置这一块
+
 https://blog.51cto.com/u_15127636/3257851
 https://butterfly.js.org/
 https://winney07.github.io/2018/08/02/%E5%9C%A8Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/

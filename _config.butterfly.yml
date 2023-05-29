@@ -164,14 +164,14 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+     - img: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/wechat.jpg
+       link:
+       text: 微信
+     - img: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/alipay.jpg
+       link:
+       text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -209,7 +209,7 @@ footer:
   owner:
     enable: true
     since: 2023
-  custom_text:
+  custom_text: Training the faculty of mindfulness is like breathing oxygen continuously to remain alive.
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -276,8 +276,8 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 2023/4/28 15:00:00
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -316,7 +316,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 1
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start: # 8
   end: # 22

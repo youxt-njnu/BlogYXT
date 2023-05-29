@@ -495,3 +495,7 @@ $ git push origin -D pay
 [提醒多用户拥有：**fatal: detected dubious ownership in repository at ‘E:/workspace/CSMarket**](https://blog.51cto.com/u_15740728/5805813)
 
 [解决git报错10054](https://blog.csdn.net/weixin_40908748/article/details/122367878)
+
+[破除大文件限制](https://www.jianshu.com/p/7d8003ba2324)
+
+[大文件检测删除](https://marcosantonocito.medium.com/fixing-the-gh001-large-files-detected-you-may-want-to-try-git-large-file-storage-43336b983272)
