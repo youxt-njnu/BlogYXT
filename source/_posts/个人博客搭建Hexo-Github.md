@@ -59,6 +59,10 @@ hexo server -i 192.168.1.1 #自定义 IP
 
 [图标](https://fontawesome.com/)
 
+[valine评论系统设置](https://www.iszy.cc/posts/Valine/)
+
+
+
 手动更新：
 
 ```python
@@ -125,6 +129,8 @@ https://winney07.github.io/2018/08/02/%E5%9C%A8Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E
 https://winney07.github.io/2018/08/02/%E5%9C%A8Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/
 https://bore.vip/archives/5b629e16/
 https://butterfly.js.org/posts/4aa8abbe/#%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2
+
+ 
 
 
 

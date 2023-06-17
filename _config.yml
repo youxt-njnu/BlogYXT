@@ -111,3 +111,19 @@ deploy:
 aplayer:
     enable: true
     asset_inject: false
+    
+
+# Valine
+# For more information: https://valine.js.org, https://github.com/xCss/Valine
+valine:
+  enable: true
+  appId: 'StmwBdb4aXO6LMYWRxjVnufr-gzGzoHsz' # your leancloud application appid
+  appKey: 'V7WavrdJsNE6xxx5YGiygidl' # your leancloud application appkey
+  serverURLs: # When the custom domain name is enabled, fill it in here
+  placeholder: '»¶Ó­½»Á÷£¡' # comment box placeholder
+  avatar: mm # gravatar style
+  meta: [nick, mail, link] # Custom comment header
+  pageSize: 10 # pagination size
+  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+  comment_count: true # If false, comment count will only be displayed in post page, not in home page
+  recordIP: false # Whether to record the commenter IP
