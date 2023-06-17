@@ -119,8 +119,8 @@ valine:
   enable: true
   appId: 'StmwBdb4aXO6LMYWRxjVnufr-gzGzoHsz' # your leancloud application appid
   appKey: 'V7WavrdJsNE6xxx5YGiygidl' # your leancloud application appkey
-  serverURLs: # When the custom domain name is enabled, fill it in here
-  placeholder: '欢迎交流！' # comment box placeholder
+  serverURLs: 'https://stmwbdb4.lc-cn-n1-shared.com' # When the custom domain name is enabled, fill it in here
+  placeholder: '留下你的足迹o(*￣▽￣*)ブ' # comment box placeholder
   avatar: mm # gravatar style
   meta: [nick, mail, link] # Custom comment header
   pageSize: 10 # pagination size
