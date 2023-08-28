@@ -5,7 +5,7 @@ photos: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/22862D84D2E06B14286B09AB
 tags: 
   - Hexo
   - 个人博客
-categories: 	
+categories:     
   - 周边扩展
 comments: true
 cover: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/15A21438BD46CC6CF21998480FDA2C83.jpg
@@ -61,7 +61,7 @@ hexo server -i 192.168.1.1 #自定义 IP
 
 [valine评论系统设置](https://www.iszy.cc/posts/Valine/)
 
-
+[自定义侧边栏](https://butterfly.js.org/posts/ea33ab97/#%E4%BE%8B%E5%AD%90)
 
 手动更新：
 
@@ -109,8 +109,6 @@ hide:
 ---
 ```
 
-
-
 ## 错误处理
 
 [YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key](https://blog.csdn.net/swy_swy_swy/article/details/105326420)：md文档中的头部信息里，键值对之间需要有空格
@@ -129,8 +127,3 @@ https://winney07.github.io/2018/08/02/%E5%9C%A8Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E
 https://winney07.github.io/2018/08/02/%E5%9C%A8Hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/
 https://bore.vip/archives/5b629e16/
 https://butterfly.js.org/posts/4aa8abbe/#%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2
-
- 
-
-
-

@@ -12,20 +12,20 @@ categories:
 
 # 版本控制
 
-用来记录文件变化，以便查阅特定版本修订情况；
+用来记录文件变化，以便查阅特定版本修订情1况；
 
 把手工管理文件版本的方式，改为由软件管理文件的版本；而负责管理文件版本的软件就叫做版本控制软件
 
 优点：
 
 > 操作简便
->
+> 
 > 易于对比
->
+> 
 > 易于回溯
->
+> 
 > 不易丢失
->
+> 
 > 协作方便
 
 分类：
@@ -124,13 +124,13 @@ git init 初始化本地库
 git status
 
 > 工作区的4中状态：
->
+> 
 > untracked(不被git管理), unmodified(工作区和git仓库的文件内容一致), modified(不一致), staged(工作区中修改内容已放在暂存区，准备将修改后的文件保存到git仓库)
->
+> 
 > 以精简状态显示文件状态报告：(--short)
->
+> 
 > git status -s
->
+> 
 > 此时未跟踪的文件前面有红色的??标记，修改了的文件前面有红色的M
 
 **添加到暂存区**
@@ -138,13 +138,13 @@ git status
 git add 文件名 
 
 > 此时文件已被跟踪，添加到了暂存区，git status -s下这个文件前面有绿色A的标记
->
+> 
 > 若提交的是修改的已有文件，会显示绿色的M
 
 **对所有文件暂存**
 
 > `git add xx`命令可以将xx文件添加到暂存区，如果有很多改动可以通过 `git add -A .`来一次添加所有改变的文件。
->
+> 
 > 注意 `-A` 选项后面还有一个句点。 `git add -A`表示添加所有内容， `git add .` 表示添加新文件和编辑过的文件不包括删除的文件; `git add -u` 表示添加编辑或者删除的文件，不包括新添加的文件
 
 ```python
@@ -181,13 +181,13 @@ git reflog  查看版本信息
 git log  查看版本详细信息，按照提交历史，最近的提交显示在最上面
 
 > :表示下面还有内容，可以点击enter继续查看；
->
+> 
 > 也可以点击q然后退出查看
->
+> 
 > git log -2可以查看最近两次的提交历史
->
+> 
 > git log -2 --pretty=oneline，在一行上显示最近两条消息
->
+> 
 > git log -2 --pretty=format:"%h | %an | % ar | %s"，自定义输出格式，%h表示提交的简写哈希值，%an表示作者名字，%ar表示作者修订日期，%s表示提交说明
 
 ```python
@@ -216,12 +216,12 @@ $ git reflog
 087a1a7 (HEAD -> master) HEAD@{0}: commit: my third commit 
 ca8ded6 HEAD@{1}: commit: my second commit 
 86366fa HEAD@{2}: commit (initial): my first commit 
- 
+
 # 切换到 86366fa版本，也就是我们第一次提交的版本 
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git reset --hard 86366fa 
 HEAD is now at 86366fa my first commit 
- 
+
 # 切换完毕之后再查看历史记录，当前成功切换到了 86366fa版本 
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git reflog 
@@ -229,7 +229,7 @@ $ git reflog
 087a1a7 HEAD@{1}: commit: my third commit 
 ca8ded6 HEAD@{2}: commit: my second commit 
 86366fa (HEAD -> master) HEAD@{3}: commit (initial): my first commit 
- 
+
 # 然后查看文件 hello.txt，发现文件内容已经变化 
 $ cat hello.txt  
 hello git! hello atguigu! 
@@ -262,7 +262,7 @@ git remote add 别名 远程地址 起别名
 $ git remote -v 
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git remote add ori https://github.com/atguiguyueyue/git-shTest.git 
- 
+
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git remote -v 
 ori     https://github.com/atguiguyueyue/git-shTest.git (fetch) 
@@ -276,7 +276,7 @@ git remote show 远程仓库名称（默认都叫origin）
 **分支**
 
 > 一般程序开发中，是不允许在主分支上进行代码修改和操作的，风险太高；
->
+> 
 > 程序员在功能分支上进行开发，新功能开发且测试完毕后，再合并到主分支上；
 
 **创建分支**
@@ -361,8 +361,6 @@ $ git checkout pay
 $ git checkout -b payment origin/pay
 ```
 
-
-
 **把指定的分支合并到当前分支上**
 
 git merge 分支名 
@@ -382,12 +380,12 @@ On branch master
 You have unmerged paths. 
   (fix conflicts and run "git commit") 
   (use "git merge --abort" to abort the merge) 
- 
+
 Unmerged paths: 
   (use "git add <file>..." to mark resolution) 
- 
+
         both modified:   hello.txt 
- 
+
 no changes added to commit (use "git add" and/or "git commit -a")
 
 # 编辑有冲突的文件，删除特殊符号，决定要使用的内容 
@@ -428,19 +426,19 @@ git branch -d 功能分支 #要保证现阶段不是在要删除的分支上
 可以创建一个名为.gitignore的配置文件，列出要忽略的文件的匹配模式
 
 > #开头，注释
->
+> 
 > /结尾，目录
->
+> 
 > /开头，递归
->
+> 
 > !开头，取反
->
+> 
 > 可以用glob模式进行文件和文件夹的匹配，glob指简化了的正则表达式
->
+> 
 > ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/git%E6%89%8B%E5%86%8C-2.png)
->
+> 
 > 可以直接写到git项目中，与.git同级目录，内容示例如下：
->
+> 
 > ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/git%E6%89%8B%E5%86%8C-3.png)
 
 **从其他服务器克隆一个已存在的git仓库**
@@ -499,3 +497,21 @@ $ git push origin -D pay
 [破除大文件限制](https://www.jianshu.com/p/7d8003ba2324)
 
 [大文件检测删除](https://marcosantonocito.medium.com/fixing-the-gh001-large-files-detected-you-may-want-to-try-git-large-file-storage-43336b983272)
+
+# 便捷搜索
+
+[查看或者修改本地 Git 用户名和邮箱地址 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/165646665)
+
+[Visual Studio Code提交代码提示“Make sure you configure your ‘user.name‘ and ‘user.email‘ in git.”_Sun_小杰杰哇的博客-CSDN博客](https://blog.csdn.net/qq_41271930/article/details/117514127)
+
+[自己有两台电脑,如何使用git同步文件 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/352824096)
+
+[在不同的电脑上使用同一个git账号_一个git账号可以两个人用吗_你在桥头我在火星的博客-CSDN博客](https://blog.csdn.net/weixin_44227858/article/details/108317689)
+
+[如何使用git（同一账号）在多台电脑协同做工 - 南瓜不南瓜 - 博客园 (cnblogs.com)](https://www.cnblogs.com/Ye-zixiao/p/12233193.html)
+
+[Visual Studio Code结合Git与GitHub的完整步骤_EvelynHouseba的博客-CSDN博客](https://blog.csdn.net/EvelynHouseba/article/details/105426477)
+
+[Git本地仓库和GitHub远程库的关联步骤_EvelynHouseba的博客-CSDN博客](https://blog.csdn.net/EvelynHouseba/article/details/105431094)
+
+[VSCode官方的配置同步方案 - 掘金 (juejin.cn)](https://juejin.cn/post/7066622158184644621)
