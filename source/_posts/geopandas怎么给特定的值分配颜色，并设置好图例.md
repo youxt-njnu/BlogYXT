@@ -5,8 +5,6 @@ tags:
  - python绘图
 ---
 
-
-
 # 参考链接
 
 https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.legend.html
@@ -30,4 +28,3 @@ https://www.sioe.cn/yingyong/yanse-rgb-16/
 效果
 
 ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/geopandas%E7%BB%98%E5%9B%BE1.png)
-

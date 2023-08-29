@@ -1,5 +1,10 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+photos: 
+tags: 
+  - Hexo
+categories:
+comments: true
+cover: 
 ---

@@ -11,9 +11,7 @@ comments: true
 cover: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/15A21438BD46CC6CF21998480FDA2C83.jpg
 ---
 
-# 个人博客Hexo+Github
-
-## 前置信息
+# 前置信息
 
 [wordpress建站](WordPress为什么免费？搭建WordPress网站要花多少钱？ - 窝小力的文章 - 知乎 https://zhuanlan.zhihu.com/p/91557826)
 
@@ -29,7 +27,7 @@ cover: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/15A21438BD46CC6CF21998480
 
 [运维、linux](https://www.lutixia.cn/)
 
-## 重要代码
+# 重要代码
 
 ```python
 hexo clean #清除缓存文件db.json和已生成的静态文件public
@@ -45,7 +43,7 @@ hexo server -p 5000 #更改端口
 hexo server -i 192.168.1.1 #自定义 IP
 ```
 
-## 博客构建
+# 博客构建
 
 [hexo+butterfly，搭建博客](https://juejin.cn/post/7111237168168697886)：作者个人博客推荐、nodejs、Github、个人域名、Butterfly主题
 [hexo+Github搭建博客](https://zhuanlan.zhihu.com/p/35668237)：内容和上一篇类似，但更详细了些，对应的是matery主题
@@ -62,6 +60,8 @@ hexo server -i 192.168.1.1 #自定义 IP
 [valine评论系统设置](https://www.iszy.cc/posts/Valine/)
 
 [自定义侧边栏](https://butterfly.js.org/posts/ea33ab97/#%E4%BE%8B%E5%AD%90)
+
+[在butterfly主题中添加rss订阅 | 老猫的博客 (dclef.icu)](https://dclef.icu/2022/09/24/%E5%9C%A8butterfly%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0rss%E8%AE%A2%E9%98%85/)
 
 手动更新：
 
@@ -109,13 +109,21 @@ hide:
 ---
 ```
 
-## 错误处理
+# 目录结构
+
+参考：[hexo博客迁移到另一台电脑_littlehaes的博客-CSDN博客](https://blog.csdn.net/littlehaes/article/details/81503455)
+
+![](https://s2.loli.net/2023/08/28/RvFk7qQjOT5IceG.png)
+
+# 错误处理
 
 [YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key](https://blog.csdn.net/swy_swy_swy/article/details/105326420)：md文档中的头部信息里，键值对之间需要有空格
 
 [unexpected token问题](https://one-more-tech.gitlab.io/Hexo-%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB,%E4%BD%BF%E7%94%A8html%E5%86%99%E6%96%87%E7%AB%A0,unexpected-token%E7%AD%89%E9%97%AE%E9%A2%98/index/)
 
-## 未整理
+[Hexo部署错误：err: Error: Spawn failed_error: spawn failed at childprocess.&lt;anonymous&gt; (/_cuntou0906的博客-CSDN博客](https://blog.csdn.net/weixin_44231148/article/details/124075537)
+
+# 未整理
 
 https://www.antmoe.com/posts/75a6347a/
 

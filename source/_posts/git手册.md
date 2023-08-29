@@ -3,16 +3,17 @@ title: git手册
 date: 2023-05-17 10:50:16
 tags:
  - git
- - github
- - 版本控制
+ - 设备迁移
 categories:
- - 开发工具
-
+ - 版本控制
+comments: true
+cover: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/20230511202603.png
+photos: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/20230511202603.png
 ---
 
 # 版本控制
 
-用来记录文件变化，以便查阅特定版本修订情1况；
+用来记录文件变化，以便查阅特定版本修订情况；
 
 把手工管理文件版本的方式，改为由软件管理文件的版本；而负责管理文件版本的软件就叫做版本控制软件
 
@@ -498,20 +499,10 @@ $ git push origin -D pay
 
 [大文件检测删除](https://marcosantonocito.medium.com/fixing-the-gh001-large-files-detected-you-may-want-to-try-git-large-file-storage-43336b983272)
 
-# 便捷搜索
+# 跨设备迁移
 
-[查看或者修改本地 Git 用户名和邮箱地址 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/165646665)
+用everything全局搜索了下，以前的我还没给新电脑的git搞个ssh key，于是参考这个[教程](https://www.cnblogs.com/Ye-zixiao/p/12233193.html)的第一步生成了一个；
 
-[Visual Studio Code提交代码提示“Make sure you configure your ‘user.name‘ and ‘user.email‘ in git.”_Sun_小杰杰哇的博客-CSDN博客](https://blog.csdn.net/qq_41271930/article/details/117514127)
+随后参考这个教程复制旧电脑的.ssh文件，替换到新电脑的.ssh文件：[在不同的电脑上使用同一个git账号_一个git账号可以两个人用吗_你在桥头我在火星的博客-CSDN博客](https://blog.csdn.net/weixin_44227858/article/details/108317689)
 
-[自己有两台电脑,如何使用git同步文件 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/352824096)
-
-[在不同的电脑上使用同一个git账号_一个git账号可以两个人用吗_你在桥头我在火星的博客-CSDN博客](https://blog.csdn.net/weixin_44227858/article/details/108317689)
-
-[如何使用git（同一账号）在多台电脑协同做工 - 南瓜不南瓜 - 博客园 (cnblogs.com)](https://www.cnblogs.com/Ye-zixiao/p/12233193.html)
-
-[Visual Studio Code结合Git与GitHub的完整步骤_EvelynHouseba的博客-CSDN博客](https://blog.csdn.net/EvelynHouseba/article/details/105426477)
-
-[Git本地仓库和GitHub远程库的关联步骤_EvelynHouseba的博客-CSDN博客](https://blog.csdn.net/EvelynHouseba/article/details/105431094)
-
-[VSCode官方的配置同步方案 - 掘金 (juejin.cn)](https://juejin.cn/post/7066622158184644621)
+还有个这个教程：[自己有两台电脑,如何使用git同步文件 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/352824096)，留个记录

@@ -57,16 +57,18 @@ s21="basic/road21Final.shp"
 streets=gpd.read_file(s21)
 ```
 
-![image-20230510160433659](D:\programlan\BlogYXT\source\_posts\images\绘制地图geopandas\image-20230510160433659.png)
+![](https://s2.loli.net/2023/08/28/wRPloUCSOV87a5F.png)
+
+
 
 # 数据处理
 
 ## 几个痛点
 
 > 将LINESTRING Z 转换为LINESTRING：`shapely.ops.transform`
->
+> 
 > 将数据结构调整为osm路网结构数据，方便后续调用函数进行指标求解
->
+> 
 > 数据索引的设置
 
 ## 处理流程
@@ -84,7 +86,7 @@ def RoadWork(streets,uniText):
     # 查看结构
     # node.head()
     # edges.head()
-    
+
     # 构建node结构
     nodes["osmid"]=nodes["nodeID"]
     nodes["x"]=nodes.geometry.x
@@ -99,7 +101,7 @@ def RoadWork(streets,uniText):
     # 设置索引
     nodes.set_index(['osmid'],drop=True,inplace=True)
     nodes=pd.merge(nodes,tt,how='left',left_index=True,right_index=True)
-    
+
     # 构建edges结构
     edges["u"]=edges["node_start"]
     edges["v"]=edges["node_end"]
@@ -116,17 +118,18 @@ def RoadWork(streets,uniText):
 数据处理
 
 ```python
+
 ```
 
 处理结果
 
 `nodes`
 
-![image-20230510161258067](D:\programlan\BlogYXT\source\_posts\images\绘制地图geopandas\image-20230510161258067.png)
+![](https://s2.loli.net/2023/08/28/qOoIRlJhSrbN4vB.png)
 
 `edges`
 
-![image-20230510161134471](D:\programlan\BlogYXT\source\_posts\images\绘制地图geopandas\image-20230510161134471.png)
+![](https://s2.loli.net/2023/08/28/7wZCETQM3XP9jmp.png)
 
 绘图验证
 
@@ -135,7 +138,7 @@ G = ox.graph_from_gdfs(nodes, edges)
 fig, ax = ox.plot_graph(G)
 ```
 
-![image-20230510162057666](D:\programlan\BlogYXT\source\_posts\images\绘制地图geopandas\image-20230510162057666.png)
+![](https://s2.loli.net/2023/08/28/53yIqH6PF9krhfX.png)
 
 ```python
 G.graph
@@ -144,18 +147,18 @@ G.graph
 > {'crs': <Projected CRS: EPSG:32650>
 >  Name: WGS 84 / UTM zone 50N
 >  Axis Info [cartesian]:
->
->  - E[east]: Easting (metre)
->  - N[north]: Northing (metre)
->  Area of Use:
->  - name: Between 114°E and 120°E, northern hemisphere between equator and 84°N, onshore and offshore. Brunei. China. Hong Kong. Indonesia. Malaysia - East Malaysia - Sarawak. Mongolia. Philippines. Russian Federation. Taiwan.
->  - bounds: (114.0, 0.0, 120.0, 84.0)
->  Coordinate Operation:
->  - name: UTM zone 50N
->  - method: Transverse Mercator
->  Datum: World Geodetic System 1984
->  - Ellipsoid: WGS 84
->  - Prime Meridian: Greenwich}
+> 
+> - E[east]: Easting (metre)
+> - N[north]: Northing (metre)
+>   Area of Use:
+> - name: Between 114°E and 120°E, northern hemisphere between equator and 84°N, onshore and offshore. Brunei. China. Hong Kong. Indonesia. Malaysia - East Malaysia - Sarawak. Mongolia. Philippines. Russian Federation. Taiwan.
+> - bounds: (114.0, 0.0, 120.0, 84.0)
+>   Coordinate Operation:
+> - name: UTM zone 50N
+> - method: Transverse Mercator
+>   Datum: World Geodetic System 1984
+> - Ellipsoid: WGS 84
+> - Prime Meridian: Greenwich}
 
 # 指标求解
 
@@ -210,8 +213,6 @@ del stats["streets_per_node_proportions"]
 stats2021=pd.DataFrame(pd.Series(stats, name="value")).round(3)
 ```
 
-
-
 # 数据保存
 
 ```python
@@ -237,15 +238,6 @@ gdf_nodes.to_file(filep_nodes, encoding="utf-8")
 gdf_edges.to_file(filep_edges, encoding="utf-8")
 ```
 
-
-
 # 地图可视化
 
-
-
 # 细节调整
-
-
-
-
-

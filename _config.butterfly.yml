@@ -33,9 +33,10 @@ code_word_wrap: true # 设置代码自动换行
 # formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/youxt-njnu || Github || '#24292e'
+  # fab fa-github: https://github.com/youxt-njnu || Github || '#24292e'
   fas fa-envelope: mailto:10190208@njnu.edu.cn || Email || '#4a7dbe'
   fa-brands fa-zhihu: https://www.zhihu.com/people/paleYYY || zhihu || '#24292e'
+  fas fa-rss: https://dclef.icu/atom.xml
 
 # Image (圖片設置)
 # --------------------------------------
@@ -166,10 +167,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-     - img: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/wechat.jpg
+     - img: https://s2.loli.net/2023/08/28/71kgQ3BTsGVqFwW.jpg
        link:
        text: 微信
-     - img: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/alipay.jpg
+     - img: https://s2.loli.net/2023/08/28/3EHiwCLGzZtmN7T.jpg
        link:
        text: 支付宝
 
@@ -232,7 +233,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/youxt-njnu
   card_announcement:
     enable: true
     content: This is my Blog
@@ -997,3 +998,5 @@ CDN:
     js:
     option:
     front_matter:
+    
+rss: /atom.xml

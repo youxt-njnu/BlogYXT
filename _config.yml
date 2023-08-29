@@ -7,7 +7,7 @@ title: Pale Bule Dot
 subtitle: ''
 description: 'Be brave, and know yourself'
 keywords:
-author: PBD
+author: Shealin You
 avatar: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/tit.png
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -111,4 +111,11 @@ deploy:
 aplayer:
     enable: true
     asset_inject: false
+    
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+
 
