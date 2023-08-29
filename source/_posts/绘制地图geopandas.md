@@ -4,9 +4,11 @@ date: 2023-05-10 15:49:36
 tags:
  - geopandas
  - 绘图细节
- - 毕业论文
 categories:
  - 科研绘图
+photos: https://wallroom.io/img/1920x1080/bg-c4205e1.jpg
+comments: true
+cover: https://wallroom.io/img/1920x1080/bg-c4205e1.jpg
 ---
 
 # 前言
@@ -58,8 +60,6 @@ streets=gpd.read_file(s21)
 ```
 
 ![](https://s2.loli.net/2023/08/28/wRPloUCSOV87a5F.png)
-
-
 
 # 数据处理
 

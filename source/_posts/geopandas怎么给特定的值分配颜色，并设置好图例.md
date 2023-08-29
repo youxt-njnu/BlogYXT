@@ -2,7 +2,13 @@
 title: geopandas怎么给特定的值分配颜色，并设置好图例
 date: 2023-07-23 14:49:12
 tags:
- - python绘图
+ - 绘图细节
+ - geopandas
+categories: 
+ - 科研绘图
+photos: https://wallroom.io/img/1920x1080/bg-614ea13.jpg
+comments: true
+cover: https://wallroom.io/img/1920x1080/bg-614ea13.jpg
 ---
 
 # 参考链接
