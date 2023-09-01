@@ -499,6 +499,8 @@ $ git push origin -D pay
 
 [大文件检测删除](https://marcosantonocito.medium.com/fixing-the-gh001-large-files-detected-you-may-want-to-try-git-large-file-storage-43336b983272)
 
+[Git冲突：Please commit your changes or stash them before you merge_1024_Byte的博客-CSDN博客](https://blog.csdn.net/DDD4V/article/details/118896307)
+
 # 跨设备迁移
 
 用everything全局搜索了下，以前的我还没给新电脑的git搞个ssh key，于是参考这个[教程](https://www.cnblogs.com/Ye-zixiao/p/12233193.html)的第一步生成了一个；

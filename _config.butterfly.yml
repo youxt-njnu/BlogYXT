@@ -13,6 +13,7 @@ menu:
    时间轴: /archives/ || fas fa-archive
    标签: /tags/ || fas fa-tags
    类别: /categories/ || fas fa-folder-open
+   留言板: /messageboard/ || fa fa-paper-plane
   # List||fas fa-list:
   # 音乐: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
@@ -363,7 +364,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # Preload the search data when the page loads.
   preload: false
   # Show top n results per article, show all results by setting to -1
@@ -728,7 +729,7 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
+  global-font-size: 16px
   code-font-size:
   font-family:
   code-font-family:
@@ -988,15 +989,15 @@ CDN:
     # busuanzi:
     # abcjs_basic_js:
 
- # Artitalk
-  # see https://artitalk.js.org/
-  artitalk:
-    enable: true
-    appId:
-    appKey:
-    path:
-    js:
-    option:
-    front_matter:
+# Artitalk
+# see https://artitalk.js.org/
+artitalk:
+  enable: true
+  appId:
+  appKey:
+  path:
+  js:
+  option:
+  front_matter:
     
 rss: /atom.xml

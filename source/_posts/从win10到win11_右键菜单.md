@@ -1,9 +1,9 @@
 ---
-title: 从win10到win11|右键菜单
+title: win11右键菜单
 date: 2023-08-28 14:59:30
 photos: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/22862D84D2E06B14286B09ABF9A53B72.jpg
 tags: 
-  - win11
+  - windows系统
 categories:     
   - 周边扩展
 comments: true

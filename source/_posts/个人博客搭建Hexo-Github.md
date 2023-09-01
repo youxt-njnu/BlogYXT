@@ -123,11 +123,21 @@ hide:
 
 [Hexo部署错误：err: Error: Spawn failed_error: spawn failed at childprocess.&lt;anonymous&gt; (/_cuntou0906的博客-CSDN博客](https://blog.csdn.net/weixin_44231148/article/details/124075537)
 
+[【Hexo】Hexo-butterfly全局字体的修改 | sheerkvc](https://sheerkvc.top/2022/10/02/37.hexoFontChange/)
+
 # 未整理
 
 https://www.antmoe.com/posts/75a6347a/
 
 看到了评论的设置这一块
+
+[短短1天我学会了如何修改Butterfly的配置文件 - XJHui - 博客园 (cnblogs.com)](https://www.cnblogs.com/ldu-xingjiahui/p/12594024.html)
+
+这个也是评论设置这一块
+
+[butterfly文章页美化教程-腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/1948596)
+
+[hexo（butterfly）添加说说页面（Artitalk可在线发布）_cungudafa的博客-CSDN博客](https://blog.csdn.net/cungudafa/article/details/105938885)
 
 https://blog.51cto.com/u_15127636/3257851
 https://butterfly.js.org/
