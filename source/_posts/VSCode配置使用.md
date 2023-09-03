@@ -1,14 +1,14 @@
 ---
 title: VSCode配置使用
 date: 2023-09-01 09:32:29
-photos: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/20230511202603.png
+photos: https://4k.wpcoder.cn/wp-content/uploads/2023/07/1_1688822141-1600x900.png
 tags: 
   - VSCode
   - 软件配置
 categories:
  - 开发工具
 comments: true
-cover: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/20230511202603.png
+cover: https://4k.wpcoder.cn/wp-content/uploads/2023/07/1_1688822141-1600x900.png
 ---
 
 # 配置使用

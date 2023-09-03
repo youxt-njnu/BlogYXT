@@ -4,12 +4,11 @@ date: 2023-09-01 09:34:15
 tags:
   - U3D
   - AR
-comments: true
-date: 2023-08-29 20:42:50
-photos: https://s2.loli.net/2023/08/29/NgxX5HO2tsJ6GRo.png
 categories:
- - Unity
-cover: https://s2.loli.net/2023/08/29/NgxX5HO2tsJ6GRo.png
+  - Unity
+comments: true
+photos: https://4k.wpcoder.cn/wp-content/uploads/2023/08/1_1693364259-1600x900.png
+cover: https://4k.wpcoder.cn/wp-content/uploads/2023/08/1_1693364259-1600x900.png
 ---
 
 # Unity安装
