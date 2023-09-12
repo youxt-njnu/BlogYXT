@@ -93,7 +93,7 @@ git config --global user.email 邮箱 设置用户签名
 
 > 这些信息会更新到c:/users/用户文件夹/.gitconfig文件（配置文件）中
 
-```python
+```
 $ git config --global user.name Layne 
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git config --global user.email Layne@atguigu.com 
@@ -148,7 +148,7 @@ git add 文件名
 > 
 > 注意 `-A` 选项后面还有一个句点。 `git add -A`表示添加所有内容， `git add .` 表示添加新文件和编辑过的文件不包括删除的文件; `git add -u` 表示添加编辑或者删除的文件，不包括新添加的文件
 
-```python
+```
 $ git add hello.txt 
 warning: LF will be replaced by CRLF in hello.txt. 
 The file will have its original line endings in your working 
@@ -161,7 +161,7 @@ git commit -m "日志信息" 文件名
 
 或者不加文件名，表示全部提交
 
-```python
+```
 $ git commit -m "my first commit" hello.txt 
 warning: LF will be replaced by CRLF in hello.txt. 
 The file will have its original line endings in your working 
@@ -191,7 +191,7 @@ git log  查看版本详细信息，按照提交历史，最近的提交显示�
 > 
 > git log -2 --pretty=format:"%h | %an | % ar | %s"，自定义输出格式，%h表示提交的简写哈希值，%an表示作者名字，%ar表示作者修订日期，%s表示提交说明
 
-```python
+```
 $ git reflog 
 087a1a7 (HEAD -> master) HEAD@{0}: commit: my third commit 
 ca8ded6 HEAD@{1}: commit: my second commit 
@@ -210,7 +210,7 @@ git reset --hard .
 
 git reset --hard 版本号
 
-```python
+```
 # 首先查看当前的历史记录，可以看到当前是在 087a1a7这个版本 
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git reflog 
@@ -259,7 +259,7 @@ git remote -v 查看当前所有远程地址别名
 
 git remote add 别名 远程地址 起别名 
 
-```python
+```
 $ git remote -v 
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 $ git remote add ori https://github.com/atguiguyueyue/git-shTest.git 
@@ -308,7 +308,7 @@ $ git branch -v
 
 git checkout 分支名
 
-```python
+```
 $ git checkout hot-fix 
 Switched to branch 'hot-fix' 
 --发现当先分支已由 master改为 hot-fix 
@@ -326,7 +326,7 @@ hello git! hello atguigu!
 
 可以创建指定名称的新分支，并立即切换到新分支上，但要注意再master的基础上创建新分支
 
-```python
+```
 # -b 表示创建一个新分支，checkout表示切换到刚新建的分支上
 git checkout -b 分支名称
 ```
@@ -337,7 +337,7 @@ git checkout -b 分支名称
 
 git push 别名 分支 # 之后的，可以写上别名和分支，也可以就直接写git push
 
-```python
+```
 $ git push ori master 
 Logon failed, use ctrl+c to cancel basic credential prompt. 
 Username for 'https://github.com': atguiguyueyue 
@@ -354,7 +354,7 @@ To https://github.com/atguiguyueyue/git-shTest.git
 
 从远程仓库中，把远程分支下载到本地仓库中
 
-```python
+```
 # git checkout 远程分支名称
 $ git checkout pay
 # 从远程仓库中，把对应的远程分支下载到本地仓库，并对其重命名
@@ -366,7 +366,7 @@ $ git checkout -b payment origin/pay
 
 git merge 分支名 
 
-```python
+```
 $ git checkout master
 # 先切换到主分支，然后将功能分支合并到主分支
 $ git merge hot-fix 
@@ -375,7 +375,7 @@ CONFLICT (content): Merge conflict in hello.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-```python
+```
 $ git status 
 On branch master 
 You have unmerged paths. 
@@ -398,7 +398,7 @@ $ git commit -m "merge hot-fix"
 Layne@LAPTOP-Layne MINGW64 /d/Git-Space/SH0720 (master) 
 ```
 
-```python
+```
 # 也可以打开包含冲突的文件，手动解决冲突之后，再执行如下命令
 $ git chechout master
 $ git merge reg
@@ -411,7 +411,7 @@ $ git commit -m "解决了分支合并冲突的问题"
 
 当把功能分支合并到master分支之后，可以删除对应的功能分支：
 
-```python
+```
 # git branch
 git branch -d 功能分支 #要保证现阶段不是在要删除的分支上
 ```
@@ -446,7 +446,7 @@ git branch -d 功能分支 #要保证现阶段不是在要删除的分支上
 
 git clone 远程地址 将远程仓库的内容克隆到本地 
 
-```python
+```
 $ git clone https://github.com/atguiguyueyue/git-shTest.git 
 Cloning into 'git-shTest'... 
 remote: Enumerating objects: 3, done. 
@@ -462,7 +462,7 @@ git pull # 从远程仓库，把最新的代码下载导本地，保持当前分
 
 git pull 远程库地址别名 远程分支名 将远程仓库对于分支最新内容拉下来后与当前本地分支直接合并
 
-```python
+```
 $ git pull ori master 
 remote: Enumerating objects: 5, done. 
 remote: Counting objects: 100% (5/5), done. 
@@ -480,7 +480,7 @@ Fast-forward
 
 **删除远程分支**
 
-```python
+```
 # 删除远程仓库中，指定名称的远程分支
 git push 远程仓库名称 --delete 远程分支名称
 $ git push origin --delete pay
@@ -500,6 +500,22 @@ $ git push origin -D pay
 [大文件检测删除](https://marcosantonocito.medium.com/fixing-the-gh001-large-files-detected-you-may-want-to-try-git-large-file-storage-43336b983272)
 
 [Git冲突：Please commit your changes or stash them before you merge_1024_Byte的博客-CSDN博客](https://blog.csdn.net/DDD4V/article/details/118896307)
+
+[Git Pull Force——如何用 Git 覆盖本地更改](https://www.freecodecamp.org/chinese/news/git-pull-force-how-to-overwrite-local-changes-with-git/)
+
+> 1、保留本地的修改
+> 
+> git stash
+> 
+> git pull 
+> 
+> git stash pop
+> 
+> 2、放弃本地修改
+> 
+> git reset --hard
+> 
+> git pull -------- or ------------ git pull ori master(针对报错：There is no tracking information for the current branch. Please specify which branch you want to merge with.可以尝试这个)
 
 # 跨设备迁移
 
