@@ -6,9 +6,9 @@ tags:
 categories:
  - AR开发
 comments: true
-date: 2023-09-11 09:46:05
-photos: https://4k.wpcoder.cn/wp-content/uploads/2023/08/1_1692251675-1600x1000.png
-cover: https://4k.wpcoder.cn/wp-content/uploads/2023/08/1_1692251675-1600x1000.png
+date: 2023-10-21 09:46:05
+photos: https://4k.wpcoder.cn/wp-content/uploads/2023/10/1_1697344372-1600x1068.png
+cover: https://4k.wpcoder.cn/wp-content/uploads/2023/10/1_1697344372-1600x1068.png
 ---
 # 软件开发
 
@@ -27,7 +27,6 @@ EasyAR: [AR Cloud|AR云识别|AR云服务|AR SDK-EasyAR](https://www.easyar.cn/)
 VoidAR: [太虚AR官网 | VOID AR - Beyond Reality](http://www.voidar.net/)
 
 Kivisense: [弥知科技 | KIVISENSE - 专注于增强现实与计算机视觉原创技术研究的AR平台](https://www.kivisense.com/)
-
 
 # 应用呈现
 
