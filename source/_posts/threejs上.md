@@ -1,5 +1,5 @@
 ---
-title: threejs API学习|上
+title: threejs API学习 Ⅰ
 tags:
  - WebGL
  - 3DGIS
@@ -10,7 +10,6 @@ date: 2023-12-08 11:06:05
 photos: https://wallroom.io/img/3840x2160/bg-81f2d39.jpg
 cover: https://wallroom.io/img/3840x2160/bg-81f2d39.jpg
 ---
-
 # 学习资源
 
 [AxesHelper – three.js docs (threejs.org)](https://threejs.org/docs/#api/zh/helpers/AxesHelper)

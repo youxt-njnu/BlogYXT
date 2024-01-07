@@ -10,7 +10,6 @@ comments: true
 cover: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/20230511202603.png
 photos: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/20230511202603.png
 ---
-
 # 版本控制
 
 用来记录文件变化，以便查阅特定版本修订情况；
@@ -20,13 +19,13 @@ photos: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/20230511202603.png
 优点：
 
 > 操作简便
-> 
+>
 > 易于对比
-> 
+>
 > 易于回溯
-> 
+>
 > 不易丢失
-> 
+>
 > 协作方便
 
 分类：
@@ -88,8 +87,8 @@ git中的三种状态：
 
 > --global 该命令一次使用，永久生效
 
-git config --global user.name 用户名 设置用户签名 
-git config --global user.email 邮箱 设置用户签名 
+git config --global user.name 用户名 设置用户签名
+git config --global user.email 邮箱 设置用户签名
 
 > 这些信息会更新到c:/users/用户文件夹/.gitconfig文件（配置文件）中
 
@@ -116,7 +115,7 @@ $ git config -h
 
 **将本地未进行版本控制的目录转换为git仓库**
 
-git init 初始化本地库 
+git init 初始化本地库
 
 > 会创建一个名为.git的隐藏目录，包含了初始的必要文件
 
@@ -125,27 +124,27 @@ git init 初始化本地库
 git status
 
 > 工作区的4中状态：
-> 
+>
 > untracked(不被git管理), unmodified(工作区和git仓库的文件内容一致), modified(不一致), staged(工作区中修改内容已放在暂存区，准备将修改后的文件保存到git仓库)
-> 
+>
 > 以精简状态显示文件状态报告：(--short)
-> 
+>
 > git status -s
-> 
+>
 > 此时未跟踪的文件前面有红色的??标记，修改了的文件前面有红色的M
 
 **添加到暂存区**
 
-git add 文件名 
+git add 文件名
 
 > 此时文件已被跟踪，添加到了暂存区，git status -s下这个文件前面有绿色A的标记
-> 
+>
 > 若提交的是修改的已有文件，会显示绿色的M
 
 **对所有文件暂存**
 
 > `git add xx`命令可以将xx文件添加到暂存区，如果有很多改动可以通过 `git add -A .`来一次添加所有改变的文件。
-> 
+>
 > 注意 `-A` 选项后面还有一个句点。 `git add -A`表示添加所有内容， `git add .` 表示添加新文件和编辑过的文件不包括删除的文件; `git add -u` 表示添加编辑或者删除的文件，不包括新添加的文件
 
 ```
@@ -157,7 +156,7 @@ directory.
 
 **提交到本地库**
 
-git commit -m "日志信息" 文件名 
+git commit -m "日志信息" 文件名
 
 或者不加文件名，表示全部提交
 
@@ -177,18 +176,18 @@ git commit -a -m "日志信息"
 
 **查看提交历史**
 
-git reflog  查看版本信息 
+git reflog  查看版本信息
 
 git log  查看版本详细信息，按照提交历史，最近的提交显示在最上面
 
 > :表示下面还有内容，可以点击enter继续查看；
-> 
+>
 > 也可以点击q然后退出查看
-> 
+>
 > git log -2可以查看最近两次的提交历史
-> 
+>
 > git log -2 --pretty=oneline，在一行上显示最近两条消息
-> 
+>
 > git log -2 --pretty=format:"%h | %an | % ar | %s"，自定义输出格式，%h表示提交的简写哈希值，%an表示作者名字，%ar表示作者修订日期，%s表示提交说明
 
 ```
@@ -255,9 +254,9 @@ git chckout -- 文件名称
 
 **远程地址设置**
 
-git remote -v 查看当前所有远程地址别名 
+git remote -v 查看当前所有远程地址别名
 
-git remote add 别名 远程地址 起别名 
+git remote add 别名 远程地址 起别名
 
 ```
 $ git remote -v 
@@ -277,7 +276,7 @@ git remote show 远程仓库名称（默认都叫origin）
 **分支**
 
 > 一般程序开发中，是不允许在主分支上进行代码修改和操作的，风险太高；
-> 
+>
 > 程序员在功能分支上进行开发，新功能开发且测试完毕后，再合并到主分支上；
 
 **创建分支**
@@ -333,7 +332,7 @@ git checkout -b 分支名称
 
 **推送本地分支上的内容到远程仓库**
 
-`git push -u 别名 本地分支名称` # 第一次，-u表示把本地分支和远程分支进行关联，如果push的时候想要修改分支名称，可以`git push -u 别名 本地分支名称:远程分支名称`
+`git push -u 别名 本地分支名称` # 第一次，-u表示把本地分支和远程分支进行关联，如果push的时候想要修改分支名称，可以 `git push -u 别名 本地分支名称:远程分支名称`
 
 git push 别名 分支 # 之后的，可以写上别名和分支，也可以就直接写git push
 
@@ -364,7 +363,7 @@ $ git checkout -b payment origin/pay
 
 **把指定的分支合并到当前分支上**
 
-git merge 分支名 
+git merge 分支名
 
 ```
 $ git checkout master
@@ -427,24 +426,24 @@ git branch -d 功能分支 #要保证现阶段不是在要删除的分支上
 可以创建一个名为.gitignore的配置文件，列出要忽略的文件的匹配模式
 
 > #开头，注释
-> 
+>
 > /结尾，目录
-> 
+>
 > /开头，递归
-> 
+>
 > !开头，取反
-> 
+>
 > 可以用glob模式进行文件和文件夹的匹配，glob指简化了的正则表达式
-> 
+>
 > ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/git%E6%89%8B%E5%86%8C-2.png)
-> 
+>
 > 可以直接写到git项目中，与.git同级目录，内容示例如下：
-> 
+>
 > ![](https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/git%E6%89%8B%E5%86%8C-3.png)
 
 **从其他服务器克隆一个已存在的git仓库**
 
-git clone 远程地址 将远程仓库的内容克隆到本地 
+git clone 远程地址 将远程仓库的内容克隆到本地
 
 ```
 $ git clone https://github.com/atguiguyueyue/git-shTest.git 
@@ -504,17 +503,17 @@ $ git push origin -D pay
 [Git Pull Force——如何用 Git 覆盖本地更改](https://www.freecodecamp.org/chinese/news/git-pull-force-how-to-overwrite-local-changes-with-git/)
 
 > 1、保留本地的修改
-> 
+>
 > git stash
-> 
-> git pull 
-> 
+>
+> git pull
+>
 > git stash pop
-> 
+>
 > 2、放弃本地修改
-> 
+>
 > git reset --hard
-> 
+>
 > git pull -------- or ------------ git pull ori master(针对报错：There is no tracking information for the current branch. Please specify which branch you want to merge with.可以尝试这个)
 
 # 跨设备迁移
@@ -524,3 +523,8 @@ $ git push origin -D pay
 随后参考这个教程复制旧电脑的.ssh文件，替换到新电脑的.ssh文件：[在不同的电脑上使用同一个git账号_一个git账号可以两个人用吗_你在桥头我在火星的博客-CSDN博客](https://blog.csdn.net/weixin_44227858/article/details/108317689)
 
 还有个这个教程：[自己有两台电脑,如何使用git同步文件 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/352824096)，留个记录
+
+
+# 各类型项目设置
+
+[如何将unity项目托管到github（快速便捷）-CSDN博客](https://blog.csdn.net/qq_34168477/article/details/134791224)

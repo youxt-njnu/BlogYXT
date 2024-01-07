@@ -5,12 +5,11 @@ photos: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/22862D84D2E06B14286B09AB
 tags: 
   - Hexo
   - 个人博客
-categories:     
+categories:   
   - 周边扩展
 comments: true
 cover: https://cdn.jsdelivr.net/gh/youxt-njnu/blog-img/15A21438BD46CC6CF21998480FDA2C83.jpg
 ---
-
 # 前置信息
 
 [wordpress建站](WordPress为什么免费？搭建WordPress网站要花多少钱？ - 窝小力的文章 - 知乎 https://zhuanlan.zhihu.com/p/91557826)
@@ -126,6 +125,10 @@ hide:
 [【Hexo】Hexo-butterfly全局字体的修改 | sheerkvc](https://sheerkvc.top/2022/10/02/37.hexoFontChange/)
 
 # 未整理
+
+[GitHub Pages如何部署Vite项目 - 掘金 (juejin.cn)](https://juejin.cn/post/7077143588093558815)
+
+
 
 https://www.antmoe.com/posts/75a6347a/
 
