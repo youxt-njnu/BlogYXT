@@ -7,19 +7,19 @@ tags:
  - 开源
 categories:
  - 地图学
+comments: true
+photos: https://wallroom.io/img/2880x1800/bg-983381f.jpg
+cover: https://wallroom.io/img/2880x1800/bg-983381f.jpg
 ---
-
 # 基本了解
 
 > Quora -> 知乎 ->微信公号
 
 ## 官方信息
 
-
-
 ### [官网](https://www.mapbox.com/)
 
-products: 
+products:
 
 solutions
 
@@ -45,10 +45,6 @@ blog
 
 ### [知乎(已暂停更新)](https://www.zhihu.com/org/mapboxzhong-guo)
 
-
-
-
-
 # 入门到进阶
 
 > [基本历史发展介绍](https://blog.csdn.net/terrychinaz/article/details/113736563)
@@ -61,19 +57,21 @@ blog
 
 可以使用Mapbox Studio创建一个自定义、交互式的地图，然后可以将这些自定义的地图和数据服务用于网站(Web)或移动应用程序。
 
-“图层”属性，让它从平面审美的角度拥有了近乎无限的延展能力。mapbox将所有地图属性归类，和PS中分层分组归类是一个道理。不同图层颜色，不同[线行](https://www.zhihu.com/search?q=线行&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={"sourceType"%3A"answer"%2C"sourceId"%3A276178214})粗细，不同文字字体全部可编辑···总之一切皆有可能。
+“图层”属性，让它从平面审美的角度拥有了近乎无限的延展能力。mapbox将所有地图属性归类，和PS中分层分组归类是一个道理。不同图层颜色，不同[线行](https://www.zhihu.com/search?q=线行&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra={)粗细，不同文字字体全部可编辑···总之一切皆有可能。
 
 ## Mapbox GL JS
 
 > [GitHub传送门](https://github.com/mapbox/mapbox-gl-js)
 
-## mapbox GL Native
+## Mapbox SDK for Unity
 
+> [传送门](https://docs.mapbox.com/mapbox-unity-sdk/docs/00-getting-started.html)
 
+后续详细更新
+
+## Mapbox GL Native
 
 ## node-sqlite3
-
-
 
 # 实现原理
 
@@ -124,4 +122,3 @@ GIthub协作
 > 有地图开发相关经验；
 
 * 职位：
-

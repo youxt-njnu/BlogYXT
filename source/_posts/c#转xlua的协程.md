@@ -27,7 +27,7 @@ coroutine.yield(UnityEngine.WaitForSeconds(_waitSecond));
 
 相当于c#里的下面三句话：
 
-```c#
+```csharp
 WaitForSeconds _wait; 
 _wait = new WaitForSeconds(.3f); 
 yield return _wait;
@@ -37,7 +37,7 @@ yield return _wait;
 
 c#
 
-```c#
+```csharp
 using UnityEngine;
  
 public class ReloadMap : MonoBehaviour {
