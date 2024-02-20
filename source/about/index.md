@@ -2,7 +2,6 @@
 title: about
 date: 2023-09-12 21:53:56
 ---
-
 # 基本信息
 
 - 电话/微信：156****6857
@@ -14,8 +13,8 @@ date: 2023-09-12 21:53:56
 
 # 专业技能
 
-- 软件类：Unity、ArcGIS、QGIS、SPSS、Adobe Illustrator、Visio/Drawio
-- 编程类：Python、C++、C#、 HTML&CSS&JS、PostgreSQL&PostGIS、MySQL
+- 软件类：Unity、ArcGIS、QGIS、Adobe Illustrator、Visio/Drawio
+- 编程类：C#、 HTML&CSS&JS、NodeJS、PostgreSQL&PostGIS、MySQL
 - 优势科目：空间数据结构(99)、空间数据库原理(96)、C++与GIS内核开发(98)、C#与GIS二次开发(97)、GIS前沿与进展(95)
 
 # 科研
@@ -35,7 +34,6 @@ date: 2023-09-12 21:53:56
 # 实习
 
 * 2021年暑期于江苏苏海信息科技有限公司数据处理部进行实习
-
 * 2023年暑期于视网么公司的研发部进行实习
 
 # 项目
@@ -48,16 +46,14 @@ date: 2023-09-12 21:53:56
 
 大国重器
 
-看镜南京中的两个子项目
+看镜南京
 
-# 职业愿景
+# 艰难爬坡
 
 个人关键词
 
-> GIS全栈式开发：ArcGIS/QGIS，Geoserver，PostgreSQL&PostGIS，
-> 前端：html&css&js，nodejs，vue，react
-> AR：游戏引擎、U3D、计算机图形学
+> GIS全栈式开发：ArcGIS/QGIS，Geoserver，PostgreSQL&PostGIS
+> 前端3D：html&css&js, nodejs, react; BootStrap, ECharts; ThreeJS, Cesium, WebGL
+> AR：Vuforia、U3D、Mapbox SDK for Unity、Lua
 
-希望未来能说出：
-
-I have a background in GIS, Augmented Reality and front end, so ... is like the perfect place for me.
+希望未来能说出：I have a background in GIS, Augmented Reality and front end, so ... is like the perfect place for me.
