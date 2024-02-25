@@ -7,10 +7,9 @@ categories:
  - AR开发
 comments: true
 date: 2024-02-17 08:44:05
-photos: https://4k.wpcoder.cn/wp-content/uploads/2023/09/1_1695198805-1600x780.png
-cover: https://4k.wpcoder.cn/wp-content/uploads/2023/09/1_1695198805-1600x780.png
+photos: https://wallroom.io/img/1920x1080/bg-62f5582.jpg
+cover: https://wallroom.io/img/1920x1080/bg-62f5582.jpg
 ---
-
 # 学习方式
 
 > 加入一些 ar 技术交流群，看一些博客。博客推荐_davidwang_的 arfoundation 之路，csdn 上的。

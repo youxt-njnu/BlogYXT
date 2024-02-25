@@ -7,8 +7,8 @@ categories:
  - AR开发
 comments: true
 date: 2024-02-17 08:26:05
-photos: https://4k.wpcoder.cn/wp-content/uploads/2023/09/1_1695198805-1600x780.png
-cover: https://4k.wpcoder.cn/wp-content/uploads/2023/09/1_1695198805-1600x780.png
+photos: https://wallroom.io/img/1920x1080/bg-f1b246b.jpg
+cover: https://wallroom.io/img/1920x1080/bg-f1b246b.jpg
 ---
 # Lua入门
 
@@ -417,7 +417,7 @@ C#的delegate调用：和调用普通lua函数一样
 
 Ps：delegate属性可以用一个luafunction来赋值。
 
-`<mark>`event`</mark>`
+`<mark>`event `</mark>`
 
 比如testobj里头有个事件定义是这样：public event Action TestEvent;
 
@@ -425,7 +425,7 @@ Ps：delegate属性可以用一个luafunction来赋值。
 
 移除事件回调 testobj:TestEvent('-', lua_event_callback)
 
-`<mark>`C#复杂类型和table的自动转换`</mark>`
+`<mark>`C#复杂类型和table的自动转换 `</mark>`
 
 对于一个有无参构造函数的C#复杂类型，在lua侧可以直接用一个table来代替，该table对应复杂类型的public字段有相应字段即可，支持函数参数传递，属性赋值等，例如：
 
@@ -445,7 +445,7 @@ obj:Foo({b = {a = 100}, c = 200})
 
 比如要获取UnityEngine.ParticleSystem类的Type信息，可以这样 typeof(CS.UnityEngine.ParticleSystem)。
 
-`<mark>`“强”转`</mark>`
+`<mark>`“强”转 `</mark>`
 
 lua没类型，所以不会有强类型语言的“强转”，但有个有点像的东西：告诉xlua要用指定的生成代码去调用一个对象，这在什么情况下能用到呢？有的时候第三方库对外暴露的是一个interface或者抽象类，实现类是隐藏的，这样我们无法对实现类进行代码生成。该实现类将会被xlua识别为未生成代码而用反射来访问，如果这个调用是很频繁的话还是很影响性能的，这时我们就可以把这个interface或者抽象类加到生成代码，然后指定用该生成代码来访问：
 
@@ -543,7 +543,7 @@ _map:OnUpdated('+', function() _zoomSlider.value = _map.Zoom; end);
 ```
 
 报错：
-This type must add to CSharpCallLua：typeof(UnityEngine.Events.UnityAction`<float>`), stack:......（后面还提示了其他路径，但最后查找修改的文件路径主要还是 `ExampleConfig.cs, ExampleGenConfig.cs, MessageBox.cs, `
+This type must add to CSharpCallLua：typeof(UnityEngine.Events.UnityAction `<float>`), stack:......（后面还提示了其他路径，但最后查找修改的文件路径主要还是 `ExampleConfig.cs, ExampleGenConfig.cs, MessageBox.cs, `
 处理：
 
 1. https://blog.csdn.net/X_King_Q/article/details/119376546，参考这个链接，用UnityAction关键词查找解决方案，添加一条 `typeof(UnityEngine.Events.UnityAction<float>),`;

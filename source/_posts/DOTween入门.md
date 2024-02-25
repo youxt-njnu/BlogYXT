@@ -7,10 +7,9 @@ categories:
  - AR开发
 comments: true
 date: 2024-02-17 08:42:05
-photos: https://4k.wpcoder.cn/wp-content/uploads/2023/09/1_1695198805-1600x780.png
-cover: https://4k.wpcoder.cn/wp-content/uploads/2023/09/1_1695198805-1600x780.png
+photos: https://wallroom.io/img/1920x1080/bg-f1b246b.jpg
+cover: https://wallroom.io/img/1920x1080/bg-f1b246b.jpg
 ---
-
 # DOTween入门
 
 [(81条消息) DOTween 插件下载及基本使用说明_dgtweening下载_四月的小白的博客-CSDN博客](https://blog.csdn.net/LittleWhiteLv/article/details/101026616#:~:text=using%20DG.Tweening%3B%20public%20class%20Shake%20%3A%20MonoBehaviour%20%7B,0%29%2C%2030%2C%20360%2C%20false%2C%20false%29%3B%20%7D%20%7D%20%E7%84%B6%E5%90%8E%E6%8B%96%E6%8B%BD%E8%87%B3%E9%9C%80%E8%A6%81%E9%9C%87%E5%8A%A8%E7%9A%84%E7%89%A9%E4%BD%93%E4%B8%8A%E5%8D%B3%E5%8F%AF%E3%80%82)
@@ -94,7 +93,7 @@ public void OnClickButton() {}
 
 官网案例：
 
- `<mark>`basic`</mark>`
+ `<mark>`basic `</mark>`
 
 ![](F:\marktextImg\2023-07-07-17-13-49-image.png)
 
