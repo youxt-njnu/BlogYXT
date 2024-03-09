@@ -1,4 +1,3 @@
-
 ---
 title: three+react|个人主页实战Ⅱ
 tags:
@@ -57,6 +56,92 @@ ChatGPT辅助生成❗自辨❗❗❗
 - **作用**：支持构建虚拟现实（VR）和增强现实（AR）体验。它提供了创建和管理XR会话的工具，允许开发者在兼容的设备上提供沉浸式的3D体验。
 - **区别**：专门针对XR应用的开发，提供了与VR和AR技术集成的工具和组件
 
+
+# React Three Fiber
+
+[官网教程](https://docs.pmnd.rs/react-three-fiber/getting-started/your-first-scene#adding-lights)
+
+## [Canvas](https://docs.pmnd.rs/react-three-fiber/api/canvas)
+
+**Scene+Camera+raycaster+(shadow)**
+
+**Canvas里面的内容，可以用驼峰法写，不需要导入，直接是原生的JSX组件。如 **`<mesh></mesh>`, `<boxGeometry />`, `<meshStandardMaterial />`。但从v8以后，不会自动化导入这些，可以导入react-three-fiber，然后可以直接写这些；或者是通过import 'three'
+
+**ThreeJS里的类的构造器的参数传入，**`<boxGeometry args={[w,h,d]}/>`
+
+## 与threejs的转换
+
+[对象，属性和构造器参数设置](https://docs.pmnd.rs/react-three-fiber/api/objects)（说明了从ThreeJS过渡到react-three-fiber的一些注意点）
+
+**有set方法的对象**
+
+> **可以直接用=，如果有多个参数，可以放入array**
+>
+> `color="hotpink"` not `color={new THREE.Color('hotpink')}`
+>
+> `position={[100,0,0]}` not set
+
+**有setScalar这种类似的方法，可以直接用属性scale**
+
+> `<mesh scale={1} />` or `<mesh scale={[1,1,1]} />`
+
+**有类似mesh.rotation.x这种串接的方法，使用-来连接**
+
+> `<mesh rotation-x ={1} />`
+
+## attach
+
+**在 **`react-three-fiber`（R3F）中，`attach`属性是一个非常重要的概念，用于将React组件的某些属性或对象“附加”到Three.js的父对象上。这样做的目的是为了在R3F的React元素树中保持Three.js场景图的结构和属性同步。
+
+`attach`属性通常用于 `<primitive>`组件或任何自定义组件内部，来指定如何将当前组件的Three.js对象（如材质、几何体、相机等）附加到其父Three.js对象上。例如，你可以将一个材质附加到一个网格上，或者将一个相机附加到场景中。
+
+```
+<mesh>
+  <boxGeometry attach="geometry" args={[1, 1, 1]} />
+  <meshStandardMaterial attach="material" color="orange" />
+</mesh>
+```
+
+**在这个例子中：**
+
+* `<boxGeometry>`的 `geometry`对象被附加到父 `<mesh>`的 `geometry`属性上。
+* `<meshStandardMaterial>`的 `material`对象被附加到相同 `<mesh>`的 `material`属性上。
+
+**在传统的Three.js应用中，你需要手动管理场景图的所有方面，包括创建对象、设置属性、添加到场景中等。而在R3F中，**`attach`属性简化了这一过程，允许你直接在JSX中以声明式的方式组织和连接Three.js的对象。
+
+**例如，传统Three.js中创建和添加一个带材质的立方体可能需要这样：**
+
+```
+const geometry = new THREE.BoxGeometry(1, 1, 1);
+const material = new THREE.MeshStandardMaterial({color: 'orange'});
+const mesh = new THREE.Mesh(geometry, material);
+scene.add(mesh);
+```
+
+**而在R3F中，相同的操作可以通过使用 **`attach`属性在JSX中直接声明，如前面的例子所示，这使得代码更加简洁并且保持了React的声明式风格。
+
+**总之，**`attach`属性是 `react-three-fiber`中连接React组件属性和Three.js对象的强大工具，它简化了在React中构建和管理复杂3D场景的过程。
+
+## Hooks
+
+**只能使用在Canvas元素里，因为Hooks依赖于context.**
+
+### useThree
+
+**const state = useThree()**
+
+**state.gl, .scene, .camera, .raycaster, .pointer(.mouse), .clock, .linear, .legacy, .frameloop, .performace, .size, .viewport, .set(), .get(), .invalidate(), .setSize(), .setDpr(), .setFrameloop(), .setEvents(), .onPointerMissed(), .events**
+
+### useFrame
+
+**useFrame((state, clock_delta, xrFrame) =>{})**
+
+### useLoader
+
+### useGraph
+
+[官方案例](https://docs.pmnd.rs/react-three-fiber/getting-started/examples)
+
 ## @react-spring
 
 `@react-spring`是一个基于Spring物理原理的现代React动画库，它允许开发者以声明式的方式在React应用中创建流畅、自然的动画效果。`@react-spring`的设计旨在简化动画的创建和管理，提供了一种简单而强大的方法来实现复杂的动画效果，无论是简单的值变化、列表的动态排序，还是复杂的交互动画。
@@ -87,149 +172,30 @@ ChatGPT辅助生成❗自辨❗❗❗
 
 `@react-spring`提供了一个跨平台的动画解决方案，通过不同的子项目满足了在Web、React Native、3D场景和2D canvas图形中创建动画的需求。
 
-## react-vertical-timeline-component
+## React router dom
 
-`react-vertical-timeline-component` 是一个React库，用于创建和显示垂直时间线。这个库提供了一种简单而有效的方式来展示按时间顺序排列的事件或步骤，非常适合用于展示项目里程碑、历史事件、工作经历等。它基于React开发，因此可以轻松地集成到现有的React应用中。
+**在React应用中使用 **`react-router-dom`库时，`Route`、`BrowserRouter`（在这里使用别名 `Router`），和 `Routes`组件是构建单页面应用（SPA）路由系统的核心。下面是每个组件的作用以及为什么它们通常会一起被导入和使用：
 
-### 核心特性
+**BrowserRouter (别名 Router)**
 
-- **易于使用**：通过提供的组件和属性，开发者可以快速构建出美观、响应式的时间线。
-- **高度可定制**：支持自定义颜色、图标和内容，使时间线能够匹配应用的风格和主题。
-- **响应式设计**：时间线会自动适应不同屏幕尺寸，保证在移动设备和桌面设备上都能良好展示。
-- **动画效果**：内置动画效果，为时间线的展示增添视觉吸引力。
+* **作用**：`BrowserRouter`是一个使用HTML5历史API（`pushState`、`replaceState`和 `popstate`事件）来保持UI与URL同步的路由器。它为React应用提供了一个路由的上下文环境。使用 `BrowserRouter`时，你的网址看起来很“干净”，不会有 `#`符号。
 
-### 基本使用
+**Routes**
 
-要开始使用 `react-vertical-timeline-component`，首先需要将它添加到你的React项目中：
+* **作用**：`Routes`组件在 `react-router-dom` v6中引入，用于替代v5中的 `Switch`组件。它负责根据当前的URL决定哪一个子 `Route`组件应该被渲染。`Routes`组件会选择与当前URL匹配的最佳 `Route`来渲染，并提供了嵌套路由的支持。
 
-```bash
-npm install react-vertical-timeline-component
-# 或
-yarn add react-vertical-timeline-component
+**Route**
+
+* **作用**：`Route`组件用于在路由系统中定义单个路由规则。它接受一个 `path`属性，用于指定路由的匹配路径，以及一个 `element`属性，用于指定当该路由匹配时应该渲染的组件。
+
+**这三个组件通常一起使用来构建React应用的路由系统。**`BrowserRouter`提供了一个高阶的路由容器，`Routes`用于管理路由的选择逻辑，而 `Route`用于定义具体的路由规则和对应渲染的组件。没有 `BrowserRouter`，路由系统将无法工作，因为它提供了路由的上下文；没有 `Routes`和 `Route`，你就无法定义和管理你的路由规则。这种模式允许React开发者以一种声明式的方式来组织和管理用户在应用中的导航路径，同时确保应用的UI与URL保持同步，从而提高用户体验和应用的可维护性。
+
 ```
-
-接下来，你可以在你的组件中引入并使用时间线组件及其相关的子组件。以下是一个简单的示例：
-
-```jsx
-import React from 'react';
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css'; // 引入样式文件
-
-const MyTimeline = () => (
-  <VerticalTimeline>
-    <VerticalTimelineElement
-      className="vertical-timeline-element--work"
-      date="2011 - present"
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      // icon={<WorkIcon />}
-    >
-      <h3 className="vertical-timeline-element-title">Creative Director</h3>
-      <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-      <p>
-        Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-      </p>
-    </VerticalTimelineElement>
-    {/* 可以添加更多的 VerticalTimelineElement 组件来展示其他事件 */}
-  </VerticalTimeline>
-);
-
-export default MyTimeline;
+<Router>
+  <Routes>
+    {/* 路由配置 */}
+    <Route path="/" element={<HomePage />} />
+    <Route path="/about" element={<AboutPage />} />
+  </Routes>
+</Router>
 ```
-
-在这个例子中，`VerticalTimeline`是容纳所有时间线元素的容器，而 `VerticalTimelineElement`代表时间线上的单个事件或里程碑。你可以通过传递不同的props来定制每个时间线元素的外观和内容。
-
-### 自定义和样式
-
-`react-vertical-timeline-component`提供了多种方式来定制时间线的样式和行为：
-
-- **颜色和图标**：通过 `iconStyle`属性自定义图标样式，以及通过 `icon`属性添加自定义图标。
-- **内容布局**：每个 `VerticalTimelineElement`可以包含标题、副标题和任意的HTML内容，允许灵活地展示信息。
-- **自定义类名**：可以为时间线元素添加自定义CSS类名，进一步通过CSS来定制样式。
-
-### 总结
-
-`react-vertical-timeline-component`是一个功能丰富且易于使用的React库，它能够帮助开发者在应用中快速创建出美观、响应式的垂直时间线。通过广泛的定制选项，它能够满足多种展示需求，使得时间线既能传达必要的信息，又具有吸引人的视觉效果。
-
-## @emailjs/browser
-
-`@emailjs/browser` 是一个JavaScript库，用于在客户端直接从前端应用中发送电子邮件，无需后端服务器。通过使用 EmailJS 服务，开发者可以在Web页面中集成电子邮件发送功能，而不需要编写服务器端代码或存储用户的电子邮件凭据。这使得在联系表单、通知系统或任何需要发送电子邮件的场景中，实现邮件发送变得异常简单和安全。
-
-### 核心特性
-
-- **无服务器**：不需要自己的服务器来发送电子邮件，减少了开发和维护成本。
-- **简单易用**：提供了简洁的API，可以快速在前端代码中集成和使用。
-- **安全**：不需要在客户端暴露敏感信息，如SMTP服务器登录凭据等。
-- **灵活性**：支持自定义电子邮件模板，可以根据需要发送不同内容的邮件。
-
-### 安装
-
-通过npm或yarn安装 `@emailjs/browser`：
-
-```bash
-npm install @emailjs/browser
-# 或者
-yarn add @emailjs/browser
-```
-
-### 基本使用
-
-要使用 `@emailjs/browser`发送电子邮件，首先需要在 EmailJS 网站上注册账户，创建邮件模板，并获取必要的服务ID、模板ID和用户ID。
-
-然后，可以在前端代码中使用这些ID来发送邮件：
-
-```javascript
-import emailjs from '@emailjs/browser';
-
-// 在组件加载时初始化 EmailJS 服务（例如，在React组件的useEffect中）
-emailjs.init("your-user-id"); // 使用你的User ID替换"your-user-id"
-
-// 创建发送邮件的函数
-const sendEmail = () => {
-  const templateParams = {
-    to_name: '收件人名字',
-    from_name: '发件人名字',
-    message: '邮件内容',
-    // ...其他模板参数
-  };
-
-  emailjs.send('your-service-id', 'your-template-id', templateParams)
-    .then((response) => {
-       console.log('SUCCESS!', response.status, response.text);
-    }, (error) => {
-       console.log('FAILED...', error);
-    });
-};
-```
-
-### 使用场景
-
-`@emailjs/browser`适用于多种场景，如：
-
-- **联系表单**：在静态网站或SPA中收集用户反馈或查询，直接从前端发送邮件。
-- **注册确认**：在用户注册流程中发送欢迎邮件或确认邮件。
-- **通知系统**：向用户发送通知邮件，如订单状态更新、活动提醒等。
-
-### 总结
-
-`@emailjs/browser`提供了一种简单而强大的方式，使得在没有后端的情况下直接从浏览器发送电子邮件成为可能。通过减少服务器端的需求和复杂性，开发者可以更专注于用户体验和前端功能的实现，同时保持应用的安全性和可维护性。
-
-## tailwindcss
-
-[官方文档](https://tailwindcss.com/docs/installation)
-
-[15分钟入门](https://segmentfault.com/a/1190000022622923)
-
-[入门教程](http://www.xcj.com/front-end-life/CSS/TailwindCSS.html)
-
-延申插件：
-
-> Typography
->
-> Forms
->
-> Aspect Ratio
->
-> Container Queries

@@ -1,5 +1,5 @@
 ---
-title: three+react|个人主页实战Ⅱ
+title: three+react|个人主页实战Ⅲ
 tags:
  - WebGL
  - 3DGIS
@@ -566,7 +566,7 @@ useEffect(() => {
 
 #### 没有依赖的 useEffect
 
-**如果 **`useEffect` 的依赖项列表为空（`[]`），副作用函数只会在组件挂载（mount）后执行一次。
+如果`b` 的依赖项列表为空（`[]`），副作用函数只会在组件挂载（mount）后执行一次。
 
 ```
 useEffect(() => {
