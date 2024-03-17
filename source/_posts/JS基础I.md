@@ -6,6 +6,8 @@ tags:
   - 基础知识
 categories: 
   - 大前端
+photos: https://wallroom.io/img/2560x1600/bg-6d49cc2.png
+cover: https://wallroom.io/img/2560x1600/bg-6d49cc2.png
 ---
 # JS基础
 
@@ -102,28 +104,9 @@ Emmet的前身是Zen coding,它使用缩写,来提高html/css的编写速度。
 + align-self控制子项自己在侧轴的排列方式
 + order属性定义子项的排列顺序（前后顺序）
 
-单行注释的注释方式如下：
+ // 用来注释单行文字（  快捷键   ctrl  +  /   ）
 
-```html
-// 我是一行文字，不想被 JS引擎 执行，所以 注释起来
-```
-
-    // 用来注释单行文字（  快捷键   ctrl  +  /   ）
-
-多行注释的注释方式如下：
-
-```html
-/*
-  获取用户年龄和姓名
-  并通过提示框显示出来
-*/
-```
-
-```
-/* */  用来注释多行文字（ 默认快捷键  alt +  shift  + a ） 
-```
-
-快捷键修改为：   ctrl + shift  +  /
+/* */  用来注释多行文字（ 默认快捷键  alt +  shift  + a ），快捷键修改为：   ctrl + shift  +  /
 
 vscode → 首选项按钮 → 键盘快捷方式 → 查找 原来的快捷键 → 修改为新的快捷键 → 回车确认
 
@@ -360,7 +343,7 @@ console.log(isNaN(userName));// true ，"andy"是一个非数字
   - 三种转换方式，更多第三种加号拼接字符串转换方式， 这一种方式也称之为隐式转换。
 - 转换为数字型（重点）
 
-  ![img]()![](https://s2.loli.net/2024/03/07/wdV98ZQUyLRS7xE.png)
+  ![img](https://s2.loli.net/2024/03/07/wdV98ZQUyLRS7xE.png)![]()
 
   - 注意 parseInt 和 parseFloat 单词的大小写，这2个是重点
   - 隐式转换是我们在进行算数运算的时候，JS 自动转换了数据类型
