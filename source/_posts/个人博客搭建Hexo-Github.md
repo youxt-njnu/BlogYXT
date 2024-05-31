@@ -108,6 +108,16 @@ hide:
 ---
 ```
 
+
+
+添加自定义html: [Hexo博客技巧：添加自定义html页面_hexo里html-CSDN博客](https://blog.csdn.net/weixin_58068682/article/details/116611715)
+
+插入视频：[hexo文章插入音乐和视频_hexo插入视频-CSDN博客](https://blog.csdn.net/howareyou2104/article/details/106312851)
+
+（设置宽高，设置不自动播放，url最后面加上`&autoplay=0`)
+
+
+
 # 目录结构
 
 参考：[hexo博客迁移到另一台电脑_littlehaes的博客-CSDN博客](https://blog.csdn.net/littlehaes/article/details/81503455)
