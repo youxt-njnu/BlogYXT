@@ -9,7 +9,6 @@ categories:
 photos: https://wallroom.io/img/3840x2160/bg-20bb43a.jpg
 cover: https://wallroom.io/img/3840x2160/bg-20bb43a.jpg
 ---
-
 地理信息集成课程汇报（与TLQ合作，感谢！）
 
 ![1.PNG](https://s2.loli.net/2024/05/31/3d8OD9FK1LaHZYx.png)
@@ -22,7 +21,10 @@ cover: https://wallroom.io/img/3840x2160/bg-20bb43a.jpg
 
 ![5.PNG](https://s2.loli.net/2024/05/31/8fx5bjDVnpERuOd.png)
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=341481481&bvid=BV1CR4y1A78S&cid=717991642&p=1&autoplay=0"  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=341481481&bvid=BV1CR4y1A78S&cid=717991642&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe>
+</div>
+
 
 ![7.PNG](https://s2.loli.net/2024/05/31/M4D6bAowy8iZ7Yv.png)
 
@@ -40,7 +42,11 @@ cover: https://wallroom.io/img/3840x2160/bg-20bb43a.jpg
 
 ![幻灯片14.PNG](https://s2.loli.net/2024/05/31/GWtdX9sfi8VUIx1.png)
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1555426770&bvid=BV1h1421y7nD&cid=1566027972&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=1555426770&bvid=BV1h1421y7nD&cid=1566027972&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe>
+</div>
+
 
 ![幻灯片15.PNG](https://s2.loli.net/2024/05/31/1KMZYlqzh2Wy5s4.png)
 
@@ -54,7 +60,9 @@ cover: https://wallroom.io/img/3840x2160/bg-20bb43a.jpg
 
 ![幻灯片20.PNG](https://s2.loli.net/2024/05/31/O9aCgdNFh4GmoyL.png)
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1705480431&bvid=BV1GT421i7Pn&cid=1566029249&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=1555426770&bvid=BV1h1421y7nD&cid=1566027972&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe>
+</div>
 
 ![幻灯片21.PNG](https://s2.loli.net/2024/05/31/4SUDLPcJXMGzops.png)
 
@@ -63,4 +71,3 @@ cover: https://wallroom.io/img/3840x2160/bg-20bb43a.jpg
 ![幻灯片23.PNG](https://s2.loli.net/2024/05/31/cfq8XexUyz16S5k.png)
 
 ![幻灯片24.PNG](https://s2.loli.net/2024/05/31/oN3VCuPRYZwMB8z.png)
-

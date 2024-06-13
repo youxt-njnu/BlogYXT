@@ -1,10 +1,11 @@
 ---
 title: three+react|个人主页实战Ⅱ(补)
 tags:
- - WebGL
- - 3DGIS
+ - threejs
+ - react
 categories:
  - 3DGIS
+ - WebGL
 comments: true
 date: 2024-03-09 11:34:05
 photos: https://wallroom.io/img/3840x2160/bg-81f2d39.jpg
@@ -17,7 +18,6 @@ cover: https://wallroom.io/img/3840x2160/bg-81f2d39.jpg
 [react three fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/your-first-scene#adding-lights)
 
 ChatGPT辅助生成❗自辨❗❗❗
-
 
 # 相关库补充
 

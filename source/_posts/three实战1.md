@@ -1,10 +1,11 @@
 ---
 title: three+react|个人主页实战Ⅰ
 tags:
- - WebGL
- - 3DGIS
+ - threejs
+ - react
 categories:
  - 3DGIS
+ - WebGL
 comments: true
 date: 2024-02-25 11:23:05
 photos: https://wallroom.io/img/3840x2160/bg-81f2d39.jpg

@@ -1,11 +1,10 @@
-
 ---
 title: threejs API学习 Ⅳ
 tags:
- - WebGL
- - 3DGIS
+ - threejs
 categories:
  - 3DGIS
+ - WebGL
 comments: true
 date: 2024-01-07 15:56:05
 photos: https://wallroom.io/img/3840x2160/bg-81f2d39.jpg
@@ -20,7 +19,6 @@ cover: https://wallroom.io/img/3840x2160/bg-81f2d39.jpg
 [Releases · mrdoob/three.js (github.com)](https://github.com/mrdoob/three.js/releases)
 
 [系统课—面向人群_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV14r4y1G7h4/?p=2&spm_id_from=pageDriver&vd_source=5270415d668b21206238403450bb29b5)
-
 
 # 场景标注标签
 

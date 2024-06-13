@@ -1,10 +1,11 @@
 ---
 title: three+react|个人主页实战Ⅱ
 tags:
- - WebGL
- - 3DGIS
+ - threejs
+ - react
 categories:
  - 3DGIS
+ - WebGL
 comments: true
 date: 2024-02-25 11:28:05
 photos: https://wallroom.io/img/3840x2160/bg-81f2d39.jpg
@@ -55,7 +56,6 @@ ChatGPT辅助生成❗自辨❗❗❗
 
 - **作用**：支持构建虚拟现实（VR）和增强现实（AR）体验。它提供了创建和管理XR会话的工具，允许开发者在兼容的设备上提供沉浸式的3D体验。
 - **区别**：专门针对XR应用的开发，提供了与VR和AR技术集成的工具和组件
-
 
 # React Three Fiber
 

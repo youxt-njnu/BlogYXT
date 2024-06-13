@@ -1,10 +1,10 @@
 ---
 title: threejs API学习 Ⅰ
 tags:
- - WebGL
- - 3DGIS
+ - threejs
 categories:
  - 3DGIS
+ - WebGL
 comments: true
 date: 2023-12-08 11:06:05
 photos: https://wallroom.io/img/3840x2160/bg-81f2d39.jpg

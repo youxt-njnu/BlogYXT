@@ -60,6 +60,8 @@ hexo server -i 192.168.1.1 #自定义 IP
 
 [自定义侧边栏](https://butterfly.js.org/posts/ea33ab97/#%E4%BE%8B%E5%AD%90)
 
+[Hexo 插入 Bilibili 视频自适应 | Tamsiree](https://www.tamsiree.com/TechnicalResearch/Hexo/Hexo%E6%8F%92%E5%85%A5Bilibili%E8%A7%86%E9%A2%91%E8%87%AA%E9%80%82%E5%BA%94/#%E5%8E%9F%E7%89%88%E5%88%86%E4%BA%AB%E8%A7%86%E9%A2%91)
+
 [在butterfly主题中添加rss订阅 | 老猫的博客 (dclef.icu)](https://dclef.icu/2022/09/24/%E5%9C%A8butterfly%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0rss%E8%AE%A2%E9%98%85/)
 
 手动更新：
@@ -108,15 +110,11 @@ hide:
 ---
 ```
 
-
-
 添加自定义html: [Hexo博客技巧：添加自定义html页面_hexo里html-CSDN博客](https://blog.csdn.net/weixin_58068682/article/details/116611715)
 
 插入视频：[hexo文章插入音乐和视频_hexo插入视频-CSDN博客](https://blog.csdn.net/howareyou2104/article/details/106312851)
 
-（设置宽高，设置不自动播放，url最后面加上`&autoplay=0`)
-
-
+（设置宽高，设置不自动播放，url最后面加上 `&autoplay=0`)
 
 # 目录结构
 
@@ -137,8 +135,6 @@ hide:
 # 未整理
 
 [GitHub Pages如何部署Vite项目 - 掘金 (juejin.cn)](https://juejin.cn/post/7077143588093558815)
-
-
 
 https://www.antmoe.com/posts/75a6347a/
 
