@@ -7,8 +7,8 @@ categories:
  - WebGL
 comments: true
 date: 2024-06-13 11:06:05
-photos: https://static-ali.ihansen.org/app/bg1440/-eptxZKAmRQ.jpg!o
-cover: 
+photos: https://wallroom.io/img/1920x1080/bg-9666a3c.jpg
+cover: https://wallroom.io/img/1920x1080/bg-9666a3c.jpg
 ---
 # 初步了解
 

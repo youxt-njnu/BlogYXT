@@ -6,8 +6,8 @@ tags:
   - 基础知识
 categories: 
   - 大前端
-photos: https://static-ali.ihansen.org/app/bg1440/ichB3SM6v7Y.jpg!o
-cover: https://static-ali.ihansen.org/app/bg1440/ichB3SM6v7Y.jpg!o
+photos: https://wallroom.io/img/2880x1620/bg-bd4a6c6.jpg
+cover: https://wallroom.io/img/2880x1620/bg-bd4a6c6.jpg
 ---
 # JS基础
 
