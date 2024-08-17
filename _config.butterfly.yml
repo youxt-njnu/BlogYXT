@@ -18,7 +18,7 @@ menu:
   # 音乐: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
   # 简历: /link/ || fas fa-link 
-   关于: https://youxt-njnu.github.io/about_portfolio # /about/ || fas fa-heart 
+   关于: https://youxt-njnu.github.io/about_portfolio || fas fa-heart # /about/ 
 
 # Code Blocks (代碼相關)
 # --------------------------------------
