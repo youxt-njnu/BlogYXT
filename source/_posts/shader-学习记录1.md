@@ -47,9 +47,9 @@ uniform:
 
 ### step
 
-The [`step()`](https://thebookofshaders.com/glossary/?search=step) interpolation receives two parameters. 
+The [`step()`](https://thebookofshaders.com/glossary/?search=step) interpolation receives two parameters.
 
-The first one is the limit or threshold, while the second one is the value we want to check or pass. 
+The first one is the limit or threshold, while the second one is the value we want to check or pass.
 
 Any value under the limit will return `0.0` while everything above the limit will return `1.0`.
 
@@ -87,11 +87,9 @@ y = max(0.0,x);   // return the greater of x and 0.0
 
 > [Generative Art: 50 Best Examples, Tools &amp; Artists (2021 GUIDE) — AIArtists.org](https://aiartists.org/generative-art-design)
 
-
 # 几个shader
 
 ## **鼠标坐标**
-
 
 ```glsl
 // 03 code2
@@ -207,8 +205,6 @@ float plot(vec2 st,float y) {
 
 ![image.png](https://s2.loli.net/2024/08/16/z6xAHaYDJFeQ7ct.png)
 
-
-
 求个交集
 
 ```glsl
@@ -237,7 +233,6 @@ step需要分片来看：
 
 ![image.png](https://s2.loli.net/2024/08/17/sel5gGTcNRP2iJq.png)
 
-
 # 可能的bug
 
 **没定义精度** `No precision specified for (float)`
@@ -252,10 +247,9 @@ step需要分片来看：
 
 > C里面把函数写在void main()前面，或者需提前声明
 
-
-
-
 # 推荐待更新
+
+> 准备先过一遍教程再说....
 
 [Flong.com • Golan Levin &amp; Collaborators 的作品](https://www.flong.com/)
 
@@ -270,8 +264,6 @@ step需要分片来看：
 ---
 
 [Inigo Quilez :: computer graphics, mathematics, shaders, fractals, demoscene and more (iquilezles.org)](https://iquilezles.org/)
-
-[Inigo Quilez :: computer graphics, mathematics, shaders, fractals, demoscene and more (iquilezles.org)](https://iquilezles.org/articles/functions/)
 
 [Inigo Quilez :: computer graphics, mathematics, shaders, fractals, demoscene and more (iquilezles.org)](https://iquilezles.org/articles/functions/)
 
