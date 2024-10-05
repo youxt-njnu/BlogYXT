@@ -9,6 +9,7 @@ categories:
 photos: https://wallroom.io/img/5120x2880/bg-d896c9d.jpg
 cover: https://wallroom.io/img/5120x2880/bg-d896c9d.jpg
 ---
+
 # 前言
 
 学习资料：[The Book of Shaders: Shaping functions](https://thebookofshaders.com/05/)
