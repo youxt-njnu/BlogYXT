@@ -215,7 +215,7 @@ def generate_document(params):
     gitlab_text = extract_gitlab_text(relative_path)
 
     # 生成GitLab链接
-    gitlab_base = "https://code.byted.org/ad/brand_ad_emo/blob/master/"
+    gitlab_base = "打码---------blob/master/"
     gitlab_link = gitlab_base + relative_path
 
 
@@ -233,54 +233,54 @@ import {{ data, config }} from './apis/index.ts';
 
 # {title}
 
-{component_name}
+！ {component_name}
 
-```tsx
-import {{ {title} }} from '@byted/brand-biz';
-```
-
-{file_address}
-
-## 使用示例
-
-<demo
-  title="常规"
-  desc="{title}使用方法展示"
-  src="./packages/brand-biz/src/{gitlab_text}/__dockit__/demos/demo"
-/>
-
-## API
-
-### Props
-
-<APITable data={{data}} />
-
-### Config
-
-<APITable data={{config}} />
-
-## Types
-
-
-### {title}Props
-
-```tsx
-{props_definition}
-```
-
-{ type_definition}
-
-## Default
-
-{default_definiton}
-
-"""
-    return doc
+！```tsx
+！import {{ {title} }} from '--打码---';
+！```
+！
+！{file_address}
+！
+！## 使用示例
+！
+！<demo
+！  title="常规"
+！  desc="{title}使用方法展示"
+！  src="./packages/brand-biz/src/{gitlab_text}/__dockit__/demos/demo"
+！/>
+！
+！## API
+！
+！### Props
+！
+！<APITable data={{data}} />
+！
+！### Config
+！
+！<APITable data={{config}} />
+！
+！## Types
+！
+！
+！### {title}Props
+！
+！```tsx
+！{props_definition}
+！```
+！
+！{ type_definition}
+！
+！## Default
+！
+！{default_definiton}
+！
+！"""
+！    return doc
 ```
 
 ```python
 def generate_component_code(title):
-    return f"""import {{ {title} }} from '@byted/brand-biz';
+    return f"""import {{ {title} }} from "打码"
 
 const Demo = () => {{
   return (
