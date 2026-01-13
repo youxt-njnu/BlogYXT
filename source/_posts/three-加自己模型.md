@@ -54,4 +54,4 @@ export default Map2D
 针对贴图反了的，例如这个作者的很多[模型](https://skfb.ly/orJVW)，PS里 图像->图像旋转->垂直旋转画布/水平翻转画布
 
 此外，在项目中打包的时候，只会打包gltf这一个文件，其附属的bin和png文件会落单；
-这个时候我采用的是把gltf相关的都放在gltfModels文件夹，将gltfModels文件夹放到了public目录下。
+这个时候我采用的是把gltf相关的都放在gltf-models文件夹，将gltf-models文件夹放到了public目录下。

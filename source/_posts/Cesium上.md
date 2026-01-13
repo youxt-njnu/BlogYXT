@@ -101,7 +101,7 @@ const viewer = new Cesium.Viewer('cesiumContainer')
 * 屏幕坐标转世界坐标：scene.globe.pick(viewer.camera.getPickRay(windowPosition), scene) —— 一定要保证屏幕坐标在球上，不然得到的就是undefined
 * 世界坐标转屏幕坐标：Cesium.SceneTransforms.wgs84ToWindowCoordinates(scene,cartesian3)
 
-![](https://s2.loli.net/2024/04/07/QRdUelrvqxNkWHO.png)![](https://s2.loli.net/2024/04/07/QRdUelrvqxNkWHO.png)
+![](https://s2.loli.net/2024/04/07/QRdUelrvqxNkWHO.png)
 
 **空间变换：**
 
